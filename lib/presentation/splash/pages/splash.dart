@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ghostmusic/core/configs/assets/app_vectors.dart';
+import 'package:ghostmusic/presentation/intro/pages/started_page.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    redirect();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,5 +28,10 @@ class SplashPage extends StatelessWidget {
         )
       ),
     );
+  }
+
+  Future<void> redirect() async {
+    await Future.delayed(const Duration(seconds: 3));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => GetStartedPage()));
   }
 }
