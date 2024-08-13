@@ -63,7 +63,7 @@ class GetStartedPage extends StatelessWidget {
                     height: 20,
                   ),
                   BasicAppBottom(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ChooseModePage(),),);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChooseModePage(),),);
                   }, title: "Get Started")
                 ],
               ),
