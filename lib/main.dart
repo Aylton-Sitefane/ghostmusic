@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ghostmusic/core/configs/theme/app_theme.dart';
+import 'package:ghostmusic/presentation/splash/pages/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: const SplashPage(),
+    );
   }
 }
