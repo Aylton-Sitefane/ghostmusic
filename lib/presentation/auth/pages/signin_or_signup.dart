@@ -7,6 +7,8 @@ import 'package:ghostmusic/common/widgets/bottom/basic_app_bottom.dart';
 import 'package:ghostmusic/core/configs/assets/app_images.dart';
 import 'package:ghostmusic/core/configs/assets/app_vectors.dart';
 import 'package:ghostmusic/core/configs/theme/app_color.dart';
+import 'package:ghostmusic/presentation/auth/pages/signin/sign_in.dart';
+import 'package:ghostmusic/presentation/auth/pages/signup/sign_up.dart';
 
 class SigninOrSignup extends StatelessWidget {
   const SigninOrSignup({super.key});
@@ -81,9 +83,15 @@ class SigninOrSignup extends StatelessWidget {
                       children: [
                         Expanded(
                           child: BasicAppBottom(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => SignUpPage(),
+                                ),
+                              );
+                            },
                             title: "Sign up",
-                            
                           ),
                         ),
                         const SizedBox(
@@ -92,14 +100,22 @@ class SigninOrSignup extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => SignInPage(),
+                                ),
+                              );
+                            },
                             child: Text(
                               "Sign in",
                               style: TextStyle(
-                                fontSize: 16,
-                                color: context.isDarkMode ? Colors.white : Colors.black,
-                                fontWeight: FontWeight.bold
-                              ),
+                                  fontSize: 16,
+                                  color: context.isDarkMode
+                                      ? Colors.white
+                                      : Colors.black,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
