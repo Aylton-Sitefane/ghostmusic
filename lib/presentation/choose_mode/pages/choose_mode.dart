@@ -7,6 +7,7 @@ import 'package:ghostmusic/common/widgets/bottom/basic_app_bottom.dart';
 import 'package:ghostmusic/core/configs/assets/app_images.dart';
 import 'package:ghostmusic/core/configs/assets/app_vectors.dart';
 import 'package:ghostmusic/core/configs/theme/app_color.dart';
+import 'package:ghostmusic/presentation/auth/pages/signin_or_signup.dart';
 import 'package:ghostmusic/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseModePage extends StatelessWidget {
@@ -150,7 +151,7 @@ class ChooseModePage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const ChooseModePage(),
+                          builder: (context) => const SigninOrSignup(),
                         ),
                       );
                     },
