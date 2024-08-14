@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600403189784",
+    "project_id": "ghostmusic-84391",
+    "storage_bucket": "ghostmusic-84391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600403189784:android:2a53119e6a138de74ee36d",
+        "android_client_info": {
+          "package_name": "com.ghostmusic.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeADBv2KxlFc2EJ_mrM8W1tR3qELpf0-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
